@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple AI Agent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perception → Reasoning → Action"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type a command (hello, time, date, open settings, bye)"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask Agent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/perceptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perception: -"
+        android:textStyle="bold"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/reasoningText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reasoning: -"
+        android:textStyle="bold"
+        android:paddingTop="12dp"/>
+
+    <TextView
+        android:id="@+id/actionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action: -"
+        android:textStyle="bold"
+        android:paddingTop="12dp"/>
+
+    <TextView
+        android:id="@+id/responseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agent Response will appear here"
+        android:textSize="18sp"
+        android:paddingTop="24dp"/>
+
+</LinearLayout>
